@@ -1,0 +1,306 @@
+第 1 章
+1.d
+2.c
+3.c
+4.c
+5.c
+6.d
+
+第 2 章
+1.a
+2.b
+3.d
+4.c
+5.a
+6.b
+7.d
+8.d
+9..java
+10.main()方法
+
+第 3 章
+1.c
+2.c,d
+3.a
+4.c,d
+5.d
+6.a,b,c
+7.b
+8.a
+9.d
+10.c
+
+第 4 章
+1.b
+2.c
+3.b
+4.a
+5.a
+6.a
+7.c
+8.d
+9.a.
+10.b
+
+第 5 章
+1.b
+2.a
+3.d
+4.num1 > num2
+else
+
+5.
+a.
+public class Ex_05_05a {
+        public static void main(String[] argv) {
+                int a = 10,b=20;
+                
+                if(a > b) {
+                        a = b;
+                }
+                else {
+                        b = a;
+                }
+        }
+}
+
+b.
+public class Ex_05_05b {
+        public static void main(String[] argv) {
+                int a = 10,b=20,c = 30;
+                
+                if((a > b) && (a < c)) {
+                        a = b + c;
+                }
+                else {
+                        c = a - b;
+                }
+        }
+}
+
+6.switch/case比對的項目型別必須相符，最簡單的修改方式是將case中的100改成字串"100" (或修改第 3 行的變數型別為int)，例如：
+
+public class Ex_05_06 {
+        public static void main(String[] argv) {
+                String str = "100";
+
+                switch(str) {
+                        case "100":
+                                System.out.println("終於考到 100 分了");
+                                break;
+                        default:
+                                System.out.println("可惜沒考到 100 分。");
+                }
+        }
+}
+
+7.條件值也必須是 char。
+
+public class Ex_05_07 {
+        public static void main(String[] argv) {
+                char grade = 'B';
+                switch(grade) {
+                        case 'A':
+                                System.out.println("等級A");
+                                break;
+                        case 'B':
+                                System.out.println("等級B");
+                                break;
+                        case 'C':
+                                System.out.println("等級C");
+                        default:
+                                System.out.println("等級D");
+                }
+        }
+}
+
+8.d
+9.b
+10.
+(a)的第4行應改成 a==b
+(b)語法正確
+(c)第14行和第15行間應再加一個 "}" 來結束前面的if
+
+第 6 章
+1.a
+2.c
+3.b
+4.a
+5.(a) do/while 迴圈的 while 部份是放在最後面
+  (b) 無初始運算式及控制運算式
+  (c) 無論 a 的值為多少條件式均為真, 所以是無窮迴圈
+  (d) 若迴圈中無跳出迴圈的機制, 則為無窮迴圈
+  (e) while 應全為小寫
+
+6.(a)10
+  (b)1
+  (c)會產生編譯錯誤,break不能在迴圈外,若有{}括起來,則結果為45
+  (d)會產生編譯錯誤,continue下一行永遠不會被執行到
+
+7.a
+8.d
+9.b
+10.c
+
+第 7 章
+1.c
+2.c
+3.b,c
+4.d
+5.b
+6.第8行必須使用new運算子
+7.d
+8.a,d
+9.將第7行的a[i]改成i
+10.d
+
+第 8 章
+1.a,d
+2.d
+3.b,c
+4.b
+5.成員變數, 方法
+6.b
+7.b
+8.a
+9.return
+10.d, 因為變數i是宣告在for迴圈內, 所以第9行無法使用變數i。
+
+第 9 章
+1.c
+2.a
+3.由於Test類別只定義有2個參數的建構方法，因此第14行必須叫用此建構方法，而不能在第15行直接叫用Test()方法
+4.第5行的建構方法加上了private存取控制，所以第14行無法叫用建構方法，必須將第5行的private改成public才行。
+5.第10行必須改用this保留字來叫用兩個參數版本的建構方法。
+6.b
+7.d
+8.c
+9.b
+10.第3行的static final成員變數w必須在宣告時或者是static區塊中設定初值。
+
+第 10 章
+1.b
+2.b
+3.b
+4.b
+5.d
+6.d
+7.d
+8.c
+9.c
+10.true
+
+第 11 章
+1.a
+2.Parent類別中沒有定義不需參數的建構方法，使得建構Child物件時無法叫用父類別的建構方法
+3.第10行只需要super(i), 而不能以super.Parent(i)叫用父類別的建構方法。
+4.30
+5.10
+6.編譯錯誤，參照變數p屬於Parent類別，但是Parent類別中並沒有定義不需參數的sum()方法。
+7.50
+8.a,b
+9.c
+10.c
+
+第 12 章
+1.b,d
+2.a,c,d
+3.b
+4.a,d
+5.c,d
+6.編譯器無法判斷第12究竟要使用I1還是I2的成員變數i
+7.介面的成員變數是final存取控制，因此第8行更改i的動作無法通過編譯。
+8.介面的方法是public存取控制，實作時必須是public，而不能限制的更嚴格。
+9.b
+10.多重定義的方法不能僅有傳回值的型別不同，因此第10行與第14行的方法會被視為重複定義。
+
+第 13 章
+1.a
+2.預設
+3.d 
+4.c:\temp\flag\test
+5.
+方法一：將程式放到c:\temp下，直接編譯執行
+方法二：使用javac -cp c:\temp 編譯，使用 java -cp .;c:\temp 執行
+
+6.Ex_13_6_Test類別的成員i必須改成public存取控制
+
+7.Ex_13_7_Main.java開頭的import敘述必須改成import flag.excercise.*;
+
+8.b
+9.b
+10.b,c
+
+第 14 章
+1.b
+2.c
+3.a,c
+4.a
+5.b
+6.d
+7.b
+8.Java 中沒有 OutOfBoundsException 這個例外類別
+9.第2個catch區塊根本不會發生作用
+10.c,d
+
+第 15 章
+1.Thread,Runnable
+2.synchronized
+3.a
+4.a,b
+5.c
+6.d
+7.第08行必須在synchronized方法或是區塊中才能叫用wait()方法
+8.第5行叫用join()時可能會引發InterruptedException，必須以try..catch捕捉
+9.sleep是Thread的static方法，必須以Thread.sleep()叫用
+10.第8行叫用notify()方法不會引發InterruptedException例外，不需使用try..catch。
+
+第 16 章
+1.位元、字元
+2.d
+3.c
+4.a
+5.c
+6.a
+7.b
+8.EOFException
+9.a、c
+10.使用輸入串流時一定要處理 IOException 例外
+
+第 17 章
+1.java.lang
+2.a
+3.b
+4.b、c
+5.a
+6.b
+7.b
+8.4.0、3.0、3.0
+9.d
+10.第1行未加分號、
+   倒數第 2 行呼叫的 remove() 方法是移除前一次呼叫 next() 方法傳回的物件, 未先呼叫 next() 方法, 將發生例外
+
+第 18 章
+1.java.awt、javax.swing
+2.b
+3.b
+4.d
+5.a
+6.a
+7.d
+8.黑、紅
+9.b
+10.類別宣告後面應加上 "implements ActionListener"
+
+附錄 F
+1.Applet、JApplet
+2.a
+3.b
+4.a、b、d
+5.b
+6.b、c
+7.d
+8.init()、destroy()
+9.b
+10.沒有"import javax.swing.*;"
+
